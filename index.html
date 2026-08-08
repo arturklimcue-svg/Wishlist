@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Вишлист — Софья и Артур</title>
+  <meta name="theme-color" content="#111318">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎁</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app">
+
+    <!-- Софья -->
+    <section class="half half-sofia" id="half-sofia">
+      <header class="hero">
+        <div class="avatar avatar-sofia">💍</div>
+        <h1>Софья</h1>
+        <p class="tagline">Её мечты</p>
+        <span class="count" id="count-sofia">0</span>
+      </header>
+
+      <div class="items" id="items-sofia"></div>
+
+      <form class="add-form" id="form-sofia">
+        <input class="field" id="name-sofia" type="text" placeholder="Название подарка" autocomplete="off">
+        <input class="field" id="link-sofia" type="url" placeholder="Ссылка на товар (https://…)" autocomplete="off">
+        <input class="field" id="image-sofia" type="url" placeholder="Ссылка на картинку (https://…)" autocomplete="off">
+        <button class="btn" type="submit">＋ Добавить в список</button>
+      </form>
+    </section>
+
+    <!-- Артур -->
+    <section class="half half-artur" id="half-artur">
+      <header class="hero">
+        <div class="avatar avatar-artur">🤵</div>
+        <h1>Артур</h1>
+        <p class="tagline">Его мечты</p>
+        <span class="count" id="count-artur">0</span>
+      </header>
+
+      <div class="items" id="items-artur"></div>
+
+      <form class="add-form" id="form-artur">
+        <input class="field" id="name-artur" type="text" placeholder="Название подарка" autocomplete="off">
+        <input class="field" id="link-artur" type="url" placeholder="Ссылка на товар (https://…)" autocomplete="off">
+        <input class="field" id="image-artur" type="url" placeholder="Ссылка на картинку (https://…)" autocomplete="off">
+        <button class="btn" type="submit">＋ Добавить в список</button>
+      </form>
+    </section>
+
+  </div>
+
+  <template id="empty-template">
+    <div class="empty">
+      <div class="empty-icon">🎁</div>
+      <p>Список пока пуст.<br>Добавьте желание ниже!</p>
+    </div>
+  </template>
+
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

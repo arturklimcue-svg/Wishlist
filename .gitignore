@@ -1,0 +1,22 @@
+# Node
+node_modules/
+
+# Секреты и токены
+.env
+*.token
+token.txt
+web-url.txt
+bot_token.txt
+
+# Данные приложения (не коммитим)
+data.json
+users.json
+
+# Логи
+*.log
+
+# Python (не используется)
+__pycache__/
+*.pyc
+.venv/
+venv/
